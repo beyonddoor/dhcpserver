@@ -2,6 +2,7 @@
 
 # interface to use
 interface='wlp3s0'
+interface="$1"
 
 # server ip configs
 server_id=`ifconfig $interface | grep 'inet[^6]' | awk '{print $2}'`
